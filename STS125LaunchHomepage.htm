@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <link rel="shortcut icon" href="nasa.ico" type="image/x-icon" />
+    <title>STS125 Launch Homepage</title>
+<style type="text/css">
+html body{
+	height:100%;margin:0;padding:0;overflow:hidden;
+}
+#q::-ms-clear{
+	display:none;
+}
+#divSearch{
+	position:absolute;top:10px; right:10px; height:3em;width:450px;border:none;z-index:99;overflow:hidden
+}
+#frmSearch{
+	margin:0;padding:0
+}
+#cmdSearch{
+	background-color:transparent;border:none;margin:0;padding:0;float:right
+}
+#divSidebar{
+	position:absolute;top:0px;left:0;width:60px;height:100%;background-color:transparent;z-index:99; overflow:hidden
+}
+#divConnstatus{
+	position:absolute; bottom:10px; left:10px; height:40px;width:40px; background-color:transparent
+}
+#divbkground{
+	position:absolute;top:0;left:0;height:100%;width:100%;
+	background-color:black;z-index:-1;
+	background-image:url('ShuttleDouble.jpg'); 
+	background-position:50% 50%;
+	background-attachment:fixed;
+	background-repeat:no-repeat; 
+	background-size:cover;
+}
+a.imgbutton{
+	text-decoration:none
+}
+
+</style>
+    
+</head>
+<body scroll="no">
+<!-- Bing -->
+<div id="divSearch">
+<form name="frmSearch" id="frmSearch" action="http://www.bing.com/search" target="Searchresults" method="get" onsubmit="return false;">
+<input type="search" name="q" id="q" tabindex="0" onfocus="this.select();" required="required" style="width:380px; height:40px; font-size:1.5em; margin-top:5px" autofocus="autofocus"/>
+<button type="submit" id="cmdSearch" name="cmdSearch" onclick="frmSearch.submit();" form="frmSearch"><img alt="Search" src="data:image/png;base64,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" style="float:right;border:none;margin-left:0px;"/></button>
+</form>
+</div>
+<!-- Bing -->
+<div id="divbkground">
+<!--<img alt="" id="imgPhoto" style="WIDTH: 100%; HEIGHT: 100%" src="BSOD.jpg"/>-->
+</div>
+<div id="divConnstatus">
+<canvas id="canConnstatus" height="40" width="40" title="On Line">
+</canvas>
+</div>
+<script type="text/javascript">
+    var canvas = document.getElementById('canConnstatus');
+    var ctx = canvas.getContext('2d');
+    // addCircle
+    CanvasRenderingContext2D.prototype.addCircle = function (x, y, radius) {
+        this.arc(x, y, radius, 0, Math.PI * 2, true);
+    }
+    var currentFrame = 0;
+    function drawConstatus() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.beginPath();
+        ctx.lineWidth = 4;
+        ctx.lineCap = 'round';
+        ctx.strokeStyle = 'white';
+        if (navigator.onLine) {
+            canvas.title = 'Ok... onLine';
+            ctx.fillStyle = 'green';
+            ctx.addCircle(5, 35, 5);
+            ctx.fill();
+            switch (currentFrame) {
+                case 0:
+                    ctx.beginPath();
+                    ctx.arc(2, 37, 15, 0, Math.PI * 1.5, true);
+                    ctx.stroke();
+                    break;
+                case 1:
+                    ctx.beginPath();
+                    ctx.arc(2, 37, 15, 0, Math.PI * 1.5, true);
+                    ctx.stroke();
+                    ctx.beginPath();
+                    ctx.arc(2, 37, 25, 0, Math.PI * 1.5, true);
+                    ctx.stroke();
+                    break;
+                case 2:
+                    ctx.beginPath();
+                    ctx.arc(2, 37, 15, 0, Math.PI * 1.5, true);
+                    ctx.stroke();
+                    ctx.beginPath();
+                    ctx.arc(2, 37, 25, 0, Math.PI * 1.5, true);
+                    ctx.stroke();
+                    ctx.beginPath();
+                    ctx.arc(2, 37, 35, 0, Math.PI * 1.5, true);
+                    ctx.stroke();
+                    break;
+                case 3:
+                    ctx.beginPath();
+                    ctx.arc(2, 37, 25, 0, Math.PI * 1.5, true);
+                    ctx.stroke();
+                    ctx.beginPath();
+                    ctx.arc(2, 37, 35, 0, Math.PI * 1.5, true);
+                    ctx.stroke();
+                    break;
+                case 4:
+                    ctx.beginPath();
+                    ctx.arc(2, 37, 35, 0, Math.PI * 1.5, true);
+                    ctx.stroke();
+                    break;
+                case 5:
+                    break;
+            }
+            if (currentFrame == 5) { currentFrame = 0; } else { currentFrame = currentFrame + 1; }
+        }
+        else {
+            canvas.title = 'Off Line';
+            ctx.fillStyle = 'red';
+            ctx.addCircle(5, 35, 5);
+            ctx.fill();
+            currentFrame = 0;
+            return;
+        }
+    }
+    var oConnStatus = setInterval('drawConstatus()', 100);
+</script>
+</body>
+</html>
